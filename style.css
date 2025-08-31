@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+        }
+        
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .terminal {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 150, 0.1);
+        }
+        
+        .terminal-header {
+            background-color: #333;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        
+        .terminal-body {
+            min-height: 200px;
+        }
+        
+        .cursor {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 5px rgba(0, 255, 150, 0.7);
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 150, 0.2);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+        
+        /* Back to Top Button Styles */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00ff96, #00cc78);
+            border: none;
+            border-radius: 50%;
+            color: #000;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
+            z-index: 1000;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .back-to-top:hover {
+            background: linear-gradient(135deg, #00cc78, #00ff96);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 255, 150, 0.4);
+        }
+        
+        .back-to-top:active {
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 768px) {
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
+            }
+        }

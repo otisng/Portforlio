@@ -3,60 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevTech | IT Professional Portfolio</title>
+    <title>TINHND | IT Helpdesk/Support Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-        }
-        
-        .code-font {
-            font-family: 'JetBrains Mono', monospace;
-        }
-        
-        .terminal {
-            background-color: #1e1e1e;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 255, 150, 0.1);
-        }
-        
-        .terminal-header {
-            background-color: #333;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-        
-        .terminal-body {
-            min-height: 200px;
-        }
-        
-        .cursor {
-            animation: blink 1s infinite;
-        }
-        
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-        
-        .glow-text {
-            text-shadow: 0 0 5px rgba(0, 255, 150, 0.7);
-        }
-        
-        .tech-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 255, 150, 0.2);
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="min-h-screen">
     <!-- Header/Navigation -->
@@ -64,9 +14,9 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <i class="fas fa-code text-black"></i>
+                    <a href="./index.html"><i class="fas fa-code text-black"></i></a>
                 </div>
-                <h1 class="code-font text-xl font-bold glow-text">DEV_TECH</h1>
+                <h1 class="code-font text-xl font-bold glow-text"><a href="./index.html">TINHND</a></h1>
             </div>
             <nav class="hidden md:block">
                 <ul class="flex space-x-8">
@@ -98,7 +48,7 @@
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h2 class="text-2xl md:text-3xl code-font text-green-400 mb-4">Hello_World()</h2>
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">I'm <span class="text-green-400 glow-text">Alex</span> <span class="code-font">Dev</span></h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">I'm <span class="text-green-400 glow-text">Tinh Nguyen Duy</span> <span class="code-font"></span></h1>
                 <div class="terminal mb-8">
                     <div class="terminal-header flex items-center px-4 py-2">
                         <div class="flex space-x-2 mr-4">
@@ -126,12 +76,12 @@
             <div class="md:w-1/2 flex justify-center">
                 <div class="relative">
                     <div class="w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-full overflow-hidden border-4 border-green-500">
-                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Profile" class="w-full h-full object-cover">
+                        <img src="./img/avatar.png" alt="Profile" class="w-full h-full object-cover">
                     </div>
-                    <div class="absolute -bottom-5 -right-5 bg-gray-900 p-4 rounded-lg border border-green-500 shadow-lg">
+                    <!-- <div class="absolute -bottom-5 -right-5 bg-gray-900 p-4 rounded-lg border border-green-500 shadow-lg">
                         <p class="code-font text-green-400">5+ Years</p>
                         <p class="text-sm">Experience</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -146,29 +96,33 @@
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
                     <div class="w-64 h-64 bg-gray-800 rounded-lg overflow-hidden border border-green-500">
-                        <img src="https://images.unsplash.com/photo-1590608897129-adaf6e5a02f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Working" class="w-full h-full object-cover">
+                        <img src="./img/avatar.png" alt="Working" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-12">
                     <div class="mb-8">
                         <h3 class="text-xl font-bold mb-4 code-font">My Journey</h3>
                         <p class="text-gray-300 mb-4">
-                            I'm a passionate Full Stack Developer with over 5 years of experience building web applications and digital solutions. My journey began with a degree in Computer Science and has evolved through various roles in startups and tech companies.
+                            Tôi đã bắt đầu hành trình của mình với niềm đam mê giảng dạy, theo học ngành Sư phạm Tin học. Trong suốt những năm tháng sinh viên, tôi không chỉ tích lũy kiến thức chuyên sâu về lập trình, cơ sở dữ liệu và mạng máy tính mà còn rèn luyện kỹ năng sư phạm, bao gồm việc giải thích các khái niệm phức tạp một cách dễ hiểu, kiên nhẫn lắng nghe và hỗ trợ người khác.
+                        </br>Tuy nhiên, tôi nhận thấy mình bị thu hút bởi môi trường công nghệ năng động, nơi tôi có thể ứng dụng trực tiếp những kiến thức đã học vào việc giải quyết các vấn đề thực tế. Vì vậy, tôi quyết định chuyển hướng sang vị trí IT Helpdesk/Support. Với nền tảng sư phạm vững chắc, tôi nhanh chóng thích nghi và phát triển. Tôi đã sử dụng kỹ năng giao tiếp và khả năng truyền đạt để lắng nghe và thấu hiểu các sự cố của người dùng, từ đó đưa ra giải pháp hiệu quả và kịp thời. Sự kiên nhẫn và tận tâm được rèn luyện trong môi trường sư phạm giúp tôi luôn giữ thái độ tích cực khi xử lý các vấn đề, dù là nhỏ nhất.
                         </p>
                         <p class="text-gray-300">
-                            I specialize in creating efficient, scalable, and user-friendly applications using modern technologies. My approach combines technical expertise with creative problem-solving to deliver exceptional results.
+                            Việc chuyển đổi này không phải là một sự thay đổi hoàn toàn mà là một sự kết hợp độc đáo. Tôi đã kết hợp kiến thức kỹ thuật từ ngành Tin học với kỹ năng mềm từ ngành Sư phạm để trở thành một chuyên viên IT Helpdesk/Support không chỉ giỏi về chuyên môn mà còn thấu hiểu người dùng. Nhờ vậy, tôi tự tin rằng mình có thể mang lại trải nghiệm hỗ trợ tốt nhất, góp phần vào sự vận hành trơn tru của hệ thống.
+                        </p>
+                    </br>
+                        <p class="text-gray-300 mb-4">
+                            "I began my journey with a passion for teaching, studying in the field of Computer Science Education. Throughout my years as a student, I not only accumulated in-depth knowledge about programming, databases, and computer networks but also honed my teaching skills, including explaining complex concepts in an understandable way, patiently listening, and supporting others.
+                        </br>However, I realize that I am attracted to the dynamic technology environment, where I can directly apply the knowledge I have learned to solve real-world problems. Therefore, I decided to shift my focus to the IT Helpdesk/Support position. With a solid educational background, I quickly adapt and develop.I have used my communication skills and ability to convey information to listen to and understand users' issues, thereby providing effective and timely solutions. The patience and dedication cultivated in the educational environment help me maintain a positive attitude when dealing with problems, no matter how small.
+                        </p>
+                        <p class="text-gray-300">
+                            This transformation is not a complete change but a unique combination. I have merged technical knowledge from the IT field with soft skills from the Education sector to become an IT Helpdesk/Support specialist who is not only proficient in expertise but also understands users. As a result, I am confident that I can provide the best support experience, contributing to the smooth operation of the system."
                         </p>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-green-500">
                             <h4 class="font-bold mb-2 code-font">Education</h4>
-                            <p class="text-sm text-gray-300">B.Sc. Computer Science</p>
-                            <p class="text-xs text-gray-400">Tech University, 2018</p>
-                        </div>
-                        <div class="bg-gray-800 p-4 rounded-lg border-l-4 border-green-500">
-                            <h4 class="font-bold mb-2 code-font">Certifications</h4>
-                            <p class="text-sm text-gray-300">AWS Certified Developer</p>
-                            <p class="text-xs text-gray-400">Google Cloud Professional</p>
+                            <p class="text-sm text-gray-300">Computer Science Teacher Education</p>
+                            <p class="text-xs text-gray-400">HCMC University of Education, 2014</p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +136,7 @@
             <h2 class="text-3xl font-bold mb-2 code-font text-center"><span class="text-green-400">#</span> My_Skills</h2>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Technologies I've worked with</p>
             
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Frontend Skills -->
                 <div class="tech-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition duration-300">
                     <div class="w-12 h-12 bg-green-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4">
@@ -190,11 +144,9 @@
                     </div>
                     <h3 class="font-bold mb-2 code-font">Frontend</h3>
                     <ul class="text-sm text-gray-300 space-y-1">
-                        <li>React.js</li>
-                        <li>Next.js</li>
-                        <li>Vue.js</li>
+                        <li>Bootstrap</li>
                         <li>TailwindCSS</li>
-                        <li>TypeScript</li>
+                        <li>JavaScript</li>
                     </ul>
                 </div>
                 
@@ -205,11 +157,8 @@
                     </div>
                     <h3 class="font-bold mb-2 code-font">Backend</h3>
                     <ul class="text-sm text-gray-300 space-y-1">
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>NestJS</li>
                         <li>Python</li>
-                        <li>GraphQL</li>
+                        <li>JavaScript</li>
                     </ul>
                 </div>
                 
@@ -220,26 +169,7 @@
                     </div>
                     <h3 class="font-bold mb-2 code-font">Database</h3>
                     <ul class="text-sm text-gray-300 space-y-1">
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
                         <li>MySQL</li>
-                        <li>Firebase</li>
-                        <li>Redis</li>
-                    </ul>
-                </div>
-                
-                <!-- DevOps Skills -->
-                <div class="tech-card bg-gray-900 p-6 rounded-lg border border-gray-700 transition duration-300">
-                    <div class="w-12 h-12 bg-green-500 bg-opacity-20 rounded-full flex items-center justify-center mb-4">
-                        <i class="fab fa-aws text-green-400 text-2xl"></i>
-                    </div>
-                    <h3 class="font-bold mb-2 code-font">DevOps</h3>
-                    <ul class="text-sm text-gray-300 space-y-1">
-                        <li>AWS</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>CI/CD</li>
-                        <li>Terraform</li>
                     </ul>
                 </div>
             </div>
@@ -277,6 +207,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-2 code-font text-center"><span class="text-green-400">#</span> My_Projects</h2>
             <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Some of my recent work</p>
+            
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
@@ -357,7 +288,7 @@
             
             <div class="text-center mt-12">
                 <a href="#" class="inline-flex items-center border border-green-500 text-green-500 hover:bg-green-500 hover:bg-opacity-10 font-bold py-3 px-6 rounded transition">
-                    View All Projects
+                    Loading
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -406,7 +337,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Email</h4>
-                                    <a href="mailto:contact@devtech.com" class="text-green-400 hover:underline">contact@devtech.com</a>
+                                    <a href="mailto:contact@devtech.com" class="text-green-400 hover:underline">tinhnd.gigamall@gmail.com</a>
                                 </div>
                             </div>
                             
@@ -416,7 +347,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Phone</h4>
-                                    <a href="tel:+1234567890" class="text-green-400 hover:underline">+1 (234) 567-890</a>
+                                    <a href="tel:+1234567890" class="text-green-400 hover:underline">+84 97-690-5xxx</a>
                                 </div>
                             </div>
                             
@@ -426,7 +357,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Location</h4>
-                                    <p class="text-green-400">San Francisco, CA</p>
+                                    <p class="text-green-400">Truong Thanh, HCMC</p>
                                 </div>
                             </div>
                         </div>
@@ -434,17 +365,17 @@
                         <div class="mt-10">
                             <h4 class="font-bold text-gray-300 mb-4">Connect with me</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition">
+                                <a href="https://github.com/otisng" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-green-500 rounded-full flex items-center justify-center transition">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-full flex items-center justify-center transition">
+                                <a href="https://www.linkedin.com/in/tinhnd/" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-blue-500 rounded-full flex items-center justify-center transition">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
-                                    <i class="fab fa-twitter"></i>
+                                <a href="https://fb.com/otis.info" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-facebook"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
-                                    <i class="fab fa-youtube"></i>
+                                <a href="https://www.instagram.com/otisnguyennn/" target="_blank" class="w-10 h-10 bg-gray-800 hover:bg-red-500 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
@@ -460,108 +391,27 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-2 mb-4 md:mb-0">
                     <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        <i class="fas fa-code text-black"></i>
+                        <a href="./index.html"><i class="fas fa-code text-black"></i></a>
                     </div>
-                    <h1 class="code-font text-xl font-bold glow-text">DEV_TECH</h1>
+                    <h1 class="code-font text-xl font-bold glow-text"><a href="./index.html">TINHND</a></h1>
                 </div>
                 <div class="text-gray-400 text-sm">
-                    <p>© 2023 DevTech. All rights reserved.</p>
+                    <p>© 2025 TINHND. All rights reserved.</p>
                 </div>
                 <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-green-400"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/otisng" class="text-gray-400 hover:text-green-400"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/tinhnd/" class="text-gray-400 hover:text-green-400"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://fb.com/otis.info" class="text-gray-400 hover:text-green-400"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/otisnguyennn/" class="text-gray-400 hover:text-green-400"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-        // Terminal typing effect
-        const terminalLines = [
-            "> Currently working with:",
-            "- JavaScript/TypeScript",
-            "- React & Node.js",
-            "- Cloud Technologies",
-            "> Looking for new opportunities",
-            "> Available for freelance work"
-        ];
-
-        let currentLine = 0;
-        let currentChar = 0;
-        const terminalContent = document.querySelector('.terminal-body');
-        const cursor = document.querySelector('.cursor');
-
-        function typeTerminal() {
-            if (currentLine < terminalLines.length) {
-                if (currentChar < terminalLines[currentLine].length) {
-                    const lineElement = terminalContent.children[currentLine + 3] || document.createElement('p');
-                    if (currentChar === 0 && !lineElement.textContent) {
-                        terminalContent.appendChild(lineElement);
-                    }
-                    lineElement.textContent = terminalLines[currentLine].substring(0, currentChar + 1);
-                    currentChar++;
-                    setTimeout(typeTerminal, Math.random() * 50 + 50);
-                } else {
-                    currentLine++;
-                    currentChar = 0;
-                    setTimeout(typeTerminal, 500);
-                }
-            } else {
-                cursor.style.display = 'inline-block';
-            }
-        }
-
-        // Start typing effect after a delay
-        setTimeout(typeTerminal, 2000);
-
-        // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    const mobileMenu = document.getElementById('mobile-menu');
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                }
-            });
-        });
-
-        // Add scroll animation
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.tech-card, .terminal, [class*="hover:"]');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.3;
-                
-                if (elementPosition < screenPosition) {
-                    element.classList.add('animate__animated', 'animate__fadeInUp');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

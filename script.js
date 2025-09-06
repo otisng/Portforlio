@@ -166,3 +166,106 @@ backToTopButton.addEventListener('click', () => {
             });
     });
 })();
+
+// Generic copy function
+function copyToClipboard(text, successMessage = 'Copied to clipboard!') {
+    // Use the modern Clipboard API if available
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function() {
+            showCopyNotification(successMessage);
+        }).catch(function(err) {
+            console.error('Could not copy text: ', err);
+            fallbackCopyTextToClipboard(text, successMessage);
+        });
+    } else {
+        // Fallback for older browsers
+        fallbackCopyTextToClipboard(text, successMessage);
+    }
+}
+
+// Copy location function
+function copyLocation() {
+    copyToClipboard("Truong Thanh, HCMC", "Location copied to clipboard!");
+}
+
+// Copy phone function
+function copyPhone() {
+    copyToClipboard("0976905420", "Phone number copied to clipboard!");
+}
+
+// Copy email function
+function copyEmail() {
+    copyToClipboard("tinhnd.gigamall@gmail.com", "Email copied to clipboard!");
+}
+
+// Fallback copy function for older browsers
+function fallbackCopyTextToClipboard(text, successMessage = 'Copied to clipboard!') {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    
+    // Avoid scrolling to bottom
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.position = "fixed";
+    
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showCopyNotification(successMessage);
+        } else {
+            showCopyNotification('Failed to copy', 'error');
+        }
+    } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+        showCopyNotification('Failed to copy', 'error');
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+// Show copy notification
+function showCopyNotification(message, type = 'success') {
+    // Remove existing notification if any
+    const existingNotification = document.querySelector('.copy-notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `copy-notification fixed top-4 right-4 z-50 px-4 py-2 rounded-lg shadow-lg transition-all duration-300 ${
+        type === 'success' 
+            ? 'bg-green-600 text-white' 
+            : 'bg-red-600 text-white'
+    }`;
+    notification.innerHTML = `
+        <div class="flex items-center">
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'} mr-2"></i>
+            <span>${message}</span>
+        </div>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Animate in
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+        notification.style.opacity = '1';
+    }, 100);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        notification.style.opacity = '0';
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
+}

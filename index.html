@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="TINHND | IT Helpdesk/Support Portfolio">
+    <meta property="og:description" content="Get to know more about my professional journey">
+    <meta property="og:image" content="./img/avatar.jpg">
     <title>TINHND | IT Helpdesk/Support Portfolio</title>
+    <link rel="icon" href="./img/logoT.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
@@ -13,9 +17,12 @@
     <!-- Header/Navigation -->
     <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <a href="./index.html"><i class="fas fa-code text-black"></i></a>
+            <div class="flex items-center space-x-3">
+                <div class="logo-container">
+                    <a href="./index.html">
+                        <img src="./img/logoT.png" alt="logo" class="logo-img w-16 h-12 logo-pulse">
+                        <div class="logo-glow"></div>
+                    </a>
                 </div>
                 <h1 class="code-font text-xl font-bold glow-text"><a href="./index.html">TINHND</a></h1>
             </div>
@@ -346,7 +353,12 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Email</h4>
-                                    <a href="#" class="text-green-400 hover:underline">tinhnd.gigamall@gmail.com</a>
+                                    <div class="flex items-center">
+                                        <p class="text-green-400">tinhnd.gigamall@gmail.com</p>
+                                        <button onclick="copyEmail()" class="ml-2 text-gray-400 hover:text-green-400 transition-colors" title="Copy email">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -356,7 +368,12 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Phone</h4>
-                                    <a href="#" class="text-green-400 hover:underline">+84 97-690-5xxx</a>
+                                    <div class="flex items-center">
+                                        <p class="text-green-400">+84 97-690-5xxx</p>
+                                        <button onclick="copyPhone()" class="ml-2 text-gray-400 hover:text-green-400 transition-colors" title="Copy phone">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -366,7 +383,12 @@
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-gray-300">Location</h4>
-                                    <p class="text-green-400">Truong Thanh, HCMC</p>
+                                    <div class="flex items-center">
+                                        <p class="text-green-400">Truong Thanh, HCMC</p>
+                                        <button onclick="copyLocation()" class="ml-2 text-gray-400 hover:text-green-400 transition-colors" title="Copy location">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -398,9 +420,12 @@
     <footer class="bg-gray-900 py-8 border-t border-gray-800">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        <a href="./index.html"><i class="fas fa-code text-black"></i></a>
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="logo-container">
+                        <a href="./index.html">
+                            <img src="./img/logoT.png" alt="logo" class="logo-img w-16 h-12 logo-pulse">
+                            <div class="logo-glow"></div>
+                        </a>
                     </div>
                     <h1 class="code-font text-xl font-bold glow-text"><a href="./index.html">TINHND</a></h1>
                 </div>

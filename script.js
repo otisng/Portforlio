@@ -102,7 +102,7 @@ backToTopButton.addEventListener('click', () => {
 // EmailJS Configuration and Form Handling
 (function() {
     // Initialize EmailJS with your public key
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+    emailjs.init("jmmSexwT-WKPoQ7Oe"); // Replace with your actual EmailJS public key
     
     const contactForm = document.getElementById('contact-form');
     const submitBtn = document.getElementById('submit-btn');
@@ -133,7 +133,7 @@ backToTopButton.addEventListener('click', () => {
         };
         
         // Send email using EmailJS
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        emailjs.send('service_qpt6io5', 'template_3kq1mcu', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
                 
